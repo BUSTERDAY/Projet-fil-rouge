@@ -1,0 +1,135 @@
+Sensibilisation des agents a la cybersécurité :
+
+1. Plateformes de formation en ligne (eLearning)
+Ces plateformes offrent des modules interactifs et des parcours de formation adaptés aux différents niveaux de compétence en cybersécurité. Elles permettent aussi un suivi des progrès des employés.
+
+KnowBe4 : Une des plateformes les plus populaires pour la sensibilisation au phishing et aux menaces de cybersécurité. Elle propose des formations interactives, des tests de phishing simulés, et des rapports détaillés sur les performances des utilisateurs.
+Cofense : Spécialisé dans la sensibilisation au phishing, Cofense propose des simulations et formations pratiques pour aider à identifier les menaces.
+SANS Security Awareness : Propose des formations en ligne avec des modules adaptés pour les institutions de santé et autres secteurs critiques. Ils offrent aussi des exercices pratiques.
+CyberRiskAware : Cette plateforme permet de mener des campagnes de sensibilisation sur mesure, avec des contenus interactifs et des évaluations des connaissances.
+
+2. Simulateurs de phishing
+Les simulateurs de phishing sont un excellent moyen de tester la réactivité des employés face aux menaces de phishing, tout en les éduquant sur les dangers.
+
+PhishMe (maintenant Cofense): Propose des simulations de phishing en temps réel pour entraîner le personnel à reconnaître les emails malveillants.
+Wombat Security (acquis par Proofpoint) : Offre des programmes de simulation de phishing ainsi que des modules de formation adaptés pour sensibiliser le personnel aux risques de sécurité.
+Barracuda PhishLine : Permet de créer des campagnes de phishing personnalisées et de suivre l’efficacité des formations.
+
+3. Outils de gestion des mots de passe et de sécurité
+Pour aider les employés à gérer correctement leurs mots de passe et renforcer leur sécurité, des outils peuvent être mis à disposition.
+
+LastPass Enterprise ou 1Password for Teams : Ces gestionnaires de mots de passe aident les utilisateurs à créer des mots de passe sécurisés, à les stocker de manière sûre et à éviter la réutilisation de mots de passe faibles.
+Bitwarden : Un autre gestionnaire de mots de passe open-source et sécurisé. Il permet d'encourager les employés à adopter des pratiques de gestion des mots de passe plus sécurisées.
+
+4. Ressources visuelles pour la sensibilisation
+L’utilisation d’affiches, de flyers, et d'infographies peut être un moyen rapide et visuel de rappeler aux employés les bonnes pratiques en matière de cybersécurité.
+
+Infographies : Créer des infographies simples et impactantes avec des conseils pratiques (par exemple : reconnaître un email de phishing, utiliser un mot de passe complexe, éviter les connexions non sécurisées).
+Outils de création : Canva, Visme, Piktochart.
+Affiches et visuels : Afficher des panneaux ou affiches dans les zones communes de l’hôpital avec des rappels sur les bonnes pratiques (ex : "Ne laissez pas vos écrans sans surveillance", "Vérifiez l'URL avant de cliquer", etc.).
+Outils de création : Adobe Spark, Lucidpress.
+
+5. Séances de formation en présentiel et webinaires
+Organiser des sessions de formation en présentiel ou des webinaires animés par des experts en cybersécurité pour échanger directement avec le personnel.
+
+Zoom / Microsoft Teams : Ces outils peuvent être utilisés pour organiser des sessions interactives en ligne sur la cybersécurité avec des experts internes ou externes.
+GoToWebinar : Pour organiser des sessions plus professionnelles, avec des fonctionnalités de sondage et de Q&A en temps réel.
+WebEx : Utilisé pour les formations en ligne avec possibilité d’intégrer des tests et des démonstrations.
+
+6. Jeux et quiz interactifs
+Les jeux et quiz interactifs sont un moyen ludique de renforcer les connaissances tout en engageant le personnel.
+
+Cybersecurity Awareness Games : Des jeux interactifs peuvent être créés ou utilisés pour rendre la formation plus engageante. Par exemple, des jeux de rôle où les participants doivent identifier des risques ou résoudre des scénarios de cybersécurité.
+Quizlet : Utilisé pour créer des quiz personnalisés sur les bonnes pratiques en cybersécurité, afin que les employés puissent tester leurs connaissances de manière ludique et compétitive.
+Kahoot! : Une plateforme de quiz interactifs, parfaite pour des séances de formation gamifiées.
+
+7. Outils de suivi et de reporting
+Après les sessions de formation et les campagnes de sensibilisation, il est important de suivre les progrès des employés et de mesurer l’efficacité des actions menées.
+
+Google Forms ou SurveyMonkey : Ces outils peuvent être utilisés pour réaliser des enquêtes de satisfaction après une session de formation ou pour mesurer l'impact de campagnes de sensibilisation.
+Power BI ou Tableau : Pour créer des tableaux de bord et analyser les résultats des simulations de phishing, des quiz et des tests de connaissance.
+LMS (Learning Management System) : Si un système de gestion de l'apprentissage est en place, il permet de suivre les formations terminées, les résultats des tests, et les progrès des employés (ex : Moodle, TalentLMS).
+
+8. Mises à jour régulières sur les menaces
+Diffuser des informations actualisées sur les dernières menaces en cybersécurité est essentiel pour maintenir la vigilance du personnel.
+
+Bulletins de sécurité internes : Publier des bulletins réguliers sur l’intranet de l’hôpital ou envoyer des newsletters pour partager les nouvelles menaces de cybersécurité et les meilleures pratiques pour s'en protéger.
+Alertes de sécurité : Utiliser des outils comme NIST Cybersecurity Framework ou US-CERT pour se tenir au courant des vulnérabilités émergentes et partager ces alertes avec le personnel.
+
+9. Applications mobiles de sécurité
+Pour les employés qui utilisent des appareils mobiles pour travailler, des applications de sécurité peuvent être mises en place pour assurer la protection de leurs appareils.
+
+Duo Security ou Okta : Pour la mise en place de l'authentification multi-facteurs (MFA) sur les appareils mobiles et la protection des comptes.
+Lookout Mobile Security : Une application pour protéger les appareils mobiles contre les menaces, comme les malwares ou le vol de données.
+
+
+Plan d'actions pour la sensibilisation à la cybersécurité
+
+1. Évaluation initiale des besoins en sensibilisation
+Objectif : Identifier les domaines et les niveaux de sensibilisation spécifiques nécessaires en fonction des rôles des employés.
+Actions :
+Réaliser un audit de cybersécurité interne pour évaluer les pratiques actuelles.
+Identifier les groupes de personnel à sensibiliser (soignants, administratifs, personnel technique, etc.).
+Analyser les incidents de sécurité passés (si disponibles) pour comprendre les vulnérabilités.
+Responsable : Équipe de sécurité informatique
+
+2. Élaboration du contenu de la formation
+Objectif : Créer des modules de formation adaptés à la diversité des employés et des risques auxquels ils sont confrontés.
+Actions :
+Développer un programme de formation en cybersécurité comprenant :
+Les principes fondamentaux de la cybersécurité (confidentialité, intégrité, disponibilité).
+Les menaces courantes (phishing, ransomware, social engineering, etc.).
+Bonnes pratiques : gestion des mots de passe, mise à jour des logiciels, gestion des appareils mobiles, etc.
+Scénarios spécifiques au secteur hospitalier, tels que la protection des données sensibles des patients.
+Intégrer des formations pratiques : simulations de phishing, détection des emails malveillants, etc.
+Préparer des supports variés : vidéos, infographies, quiz, et sessions de questions/réponses.
+Responsable : Département informatique, experts en cybersécurité
+
+3. Lancement de la campagne de sensibilisation
+Objectif : Démarrer la sensibilisation à grande échelle et s'assurer que chaque employé est informé des enjeux de cybersécurité.
+Actions :
+Organiser un événement de lancement (webinaire, conférence, réunion d'information) pour présenter l'importance de la cybersécurité.
+Distribuer des guides pratiques (brochures, affiches, e-mails) avec des conseils clairs et visuels pour un usage quotidien.
+Mettre en place un site intranet dédié avec des ressources et des actualités en cybersécurité.
+Campagnes de communication régulières via email ou affichage dans les zones de passage (ex : "Astuce de la semaine" sur la cybersécurité).
+Responsable : Département de communication, responsable de la sécurité informatique
+
+4. Formation continue et mise à jour
+Objectif : Assurer une mise à jour régulière des connaissances et renforcer la cybersécurité de manière continue.
+Actions :
+Organiser des sessions de formation continue sur les nouvelles menaces et les mises à jour réglementaires.
+Intégrer des modules de formation annuels pour tous les employés avec des tests de connaissance à la fin.
+Suivre l'évolution des menaces et adapter les formations en fonction des nouvelles tendances (par exemple, augmentation des ransomwares).
+Responsable : Responsable de la formation, équipe de cybersécurité
+
+5. Simulations et exercices pratiques
+Objectif : Mettre les employés en situation réelle pour tester leur réactivité face aux attaques.
+Actions :
+Organiser des exercices de simulation de cyberattaques (phishing, ransomware) pour tester les connaissances et réactions du personnel.
+Proposer des quiz réguliers pour évaluer la compréhension des bonnes pratiques de cybersécurité.
+Organiser des sessions de "Tabletop Exercise" où des incidents fictifs sont simulés, et les équipes doivent réagir en temps réel.
+Responsable : Équipe de cybersécurité, responsables RH
+
+6. Encouragement de la collaboration et de la culture de cybersécurité
+Objectif : Créer une culture de cybersécurité collaborative et responsable au sein de l'hôpital.
+Actions :
+Former des ambassadeurs de la cybersécurité : Désigner des personnes au sein de chaque département pour diffuser et promouvoir les bonnes pratiques.
+Organiser des ateliers interactifs où les employés partagent leurs expériences et préoccupations.
+Lancer un programme de reconnaissance et de récompenses pour les employés qui adoptent activement des pratiques de cybersécurité exemplaires.
+Responsable : Département RH, responsables des départements
+
+7. Mise en place d’un système de retour d'information et d'amélioration continue
+Objectif : Permettre un suivi constant des actions de sensibilisation et apporter des ajustements si nécessaire.
+Actions :
+Créer une boîte à idées ou une plateforme de feedback où les employés peuvent poser des questions et suggérer des améliorations.
+Effectuer des enquêtes de satisfaction après chaque session de formation pour évaluer l'efficacité et l'impact de la sensibilisation.
+Analyser les résultats des tests de connaissances et des simulations pour détecter les points faibles et ajuster le programme de formation.
+Responsable : Responsable de la formation, département de cybersécurité
+
+8. Suivi et rapports réguliers
+Objectif : Mesurer les progrès et garantir la continuité de la sensibilisation.
+Actions :
+Produire des rapports mensuels/annuels sur les activités de formation et les résultats obtenus.
+Identifier les tendances dans les erreurs récurrentes des employés et travailler sur des solutions ciblées.
+Faire un bilan annuel de la cybersécurité et des résultats des actions de sensibilisation, en ajustant le plan pour l'année suivante.
+Responsable : Direction de la sécurité informatique, direction RH
