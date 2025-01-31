@@ -1,0 +1,111 @@
+Plan de Réponse aux Incidents (PRI) en Cas de Cyberattaque pour un CHU
+1. Objectifs du PRI
+Le Plan de Réponse aux Incidents (PRI) a pour but de :
+
+Minimiser l'impact de la cyberattaque sur la continuité des services hospitaliers, la sécurité des patients, et la confidentialité des données sensibles.
+Assurer une récupération rapide des systèmes hospitaliers critiques (dossiers patients, équipements médicaux, systèmes d’administration hospitalière).
+Prévenir la propagation de l'attaque au sein du réseau interne et des systèmes interconnectés.
+Protéger les données personnelles et médicales des patients conformément aux normes de sécurité et de confidentialité (ex : RGPD).
+Restaurer la normalité des services hospitaliers avec des processus sûrs et validés après une attaque.
+2. Gouvernance de la Réponse aux Incidents
+La gestion de l’incident est coordonnée par une équipe de gouvernance dédiée. Voici la structure de l’équipe et les rôles spécifiques de chaque acteur clé.
+
+Comité de gestion de crise (CGC) :
+Directeur Général (DG) :
+
+Supervise l’orientation stratégique de la gestion de l’incident et prend les décisions de haut niveau (par exemple, la communication avec les autorités, la décision d’un arrêt temporaire des services si nécessaire).
+Assure que les services hospitaliers critiques continuent de fonctionner dans la mesure du possible.
+Responsable des systèmes d’information (RSI) :
+
+Coordonne l’aspect technique de la réponse à l’incident, en supervisant la détection, l’analyse, et la récupération des systèmes affectés.
+Évalue l'ampleur de l'attaque et identifie les priorités de rétablissement des services.
+Responsable de la cybersécurité :
+
+Dirige les actions de protection, de détection, et de confinement de l'attaque.
+Supervise les actions de restauration des systèmes, en s'assurant qu'ils sont sécurisés et exempts de toute menace résiduelle.
+Analyse les signatures de l'attaque pour identifier sa nature et son mode opératoire.
+Chef des services médicaux :
+
+Assure la continuité des soins en priorisant la récupération des systèmes liés à la prise en charge des patients (DPI, imagerie médicale, etc.).
+Gestion de la communication avec le personnel médical pour s'assurer que les soins ne sont pas interrompus.
+Responsable de la communication :
+
+Gère la communication interne et externe pendant la crise.
+Assure une communication claire et régulière avec les équipes médicales, administratives, et les patients si nécessaire.
+Prépare des déclarations publiques pour les médias, les autorités, et les patients.
+Équipe de réponse aux incidents :
+Composée de spécialistes en cybersécurité, administrateurs systèmes, techniciens réseau, responsables du support médical, et personnel administratif.
+
+3. Identification de l'Incident
+Détection et notification :
+Systèmes de surveillance : Utilisation de SIEM (Security Information and Event Management), IDS (Intrusion Detection Systems), et autres outils de surveillance pour détecter les anomalies, les activités suspectes, et les intrusions potentielles.
+Rapports des utilisateurs : Les utilisateurs doivent signaler toute activité anormale (par exemple, difficulté à accéder aux applications, messages d’erreur, fichiers chiffrés ou verrouillés).
+Exemples d’alertes possibles :
+
+Un ransomware verrouillant les fichiers avec des demandes de rançon visibles à l’écran.
+Anomalies sur le réseau (augmentation inhabituelle du trafic ou interruption du service).
+Accès non autorisé à des bases de données sensibles.
+Analyse initiale :
+Nature de l’attaque : Type d’attaque (ex : ransomware, phishing, vol de données, déni de service, etc.).
+Point d’entrée : Par exemple, vulnérabilité d’un serveur, phishing via un email, ou compromission d’un terminal.
+Systèmes affectés : Identification des systèmes critiques (DPI, équipements médicaux, systèmes administratifs).
+Impact potentiel : Risques pour la sécurité des patients, disponibilité des services, intégrité des données.
+
+4. Activation du Plan de Réponse aux Incidents (PRI)
+Dès la confirmation de l’attaque, le PRI est immédiatement activé. Cette phase inclut la mise en place d'actions spécifiques pour contenir l'incident et limiter les dommages.
+
+Isolement des systèmes compromis :
+Déconnexion du réseau : Déconnecter immédiatement les serveurs, les stations de travail et les dispositifs médicaux suspects du réseau pour empêcher la propagation.
+Mise en quarantaine : Si des équipements sont compromis, les isoler et effectuer des vérifications.
+Vérification de l'accès aux données sensibles :
+DPI et données sensibles : Confirmer que les dossiers patients et autres données sensibles sont protégés contre l’accès non autorisé.
+Suspension des accès distants : Désactiver les accès à distance (VPN, RDP, etc.) si des connexions non autorisées sont détectées.
+Communication d’urgence :
+Message d’alerte interne : Envoi immédiat d’un message d’alerte aux équipes hospitalières sur les mesures à prendre (par exemple, signaler toute activité suspecte, ne pas ouvrir de fichiers douteux, etc.).
+Mise en place d'un point de contact d'urgence : Un point de contact pour gérer les questions du personnel et des partenaires externes.
+Alerte des autorités :
+Notifier immédiatement l’ANSSI (Agence Nationale de la Sécurité des Systèmes d'Information) et, si nécessaire, la CNIL (Commission Nationale de l'Informatique et des Libertés) en cas de compromission de données personnelles.
+Préparer un rapport pour les autorités judiciaires si des crimes informatiques sont suspectés.
+
+5. Analyse approfondie de l'Incident et Contention
+Évaluation de la portée de l'attaque :
+Identification des systèmes affectés : Dossiers patients (DPI), systèmes d’imagerie, systèmes d'administration (gestion des ressources humaines, facturation, etc.).
+Analyse des traces de l'attaque : Analyse des logs systèmes et réseaux pour identifier les méthodes utilisées par l’attaquant (ex : logiciel malveillant, élévation de privilèges, extraction de données).
+Exploitation des vulnérabilités : Identifier la vulnérabilité spécifique qui a permis l’attaque (ex : serveur non patché, faiblesse d’une politique de mot de passe).
+Confinement et protection :
+Blocage de la propagation : Utilisation de firewalls, listes blanches, et contrôles d'accès pour empêcher l’attaque de se propager à d’autres systèmes.
+Enquêtes sur les terminaux : Chaque appareil suspect (ordinateur, station de travail) doit être isolé et analysé pour vérifier qu'il n'est pas infecté par un malware ou un ransomware.
+
+6. Récupération des Systèmes et Continuité des Soins
+Restaurer les services critiques :
+Priorisation des systèmes :
+Récupérer d'abord les systèmes de gestion des dossiers patients (DPI), car ce sont les services les plus essentiels.
+Ensuite, restaurer les systèmes d’imagerie médicale, les équipements médicaux connectés, puis les systèmes administratifs.
+Utilisation des sauvegardes : Vérifier que les sauvegardes sont intactes et non infectées, puis les restaurer.
+Rétablissement des accès utilisateurs : Une fois les systèmes restaurés, réinitialiser les mots de passe et les tokens d’authentification pour sécuriser les accès.
+Solutions de secours :
+Utilisation de procédures manuelles (ex : dossiers papier) si les systèmes informatiques sont temporairement inaccessibles.
+Mise en place de solutions de secours pour la gestion des soins, comme des systèmes hors ligne pour la prescription et la gestion des rendez-vous.
+Vérification de la sécurité des systèmes restaurés :
+Tests d’intégrité des systèmes restaurés pour vérifier qu’aucune menace résiduelle n’est présente.
+Audit post-récupération pour s'assurer que la cyberattaque est totalement éliminée et que tous les points d'accès sont sécurisés.
+
+7. Communication et Suivi
+Communication interne continue :
+Maintenir des mises à jour régulières au sein de l’hôpital pour informer le personnel de l’état de la situation.
+Fournir des instructions claires sur les actions à prendre pour éviter toute nouvelle attaque (par exemple, vérifier les mises à jour de sécurité, éviter les pièces jointes suspectes).
+Communication externe :
+Informer les patients des risques potentiels et des actions entreprises pour garantir la sécurité de leurs données.
+Déclaration aux médias : Préparer un message clair et transparent sur l'attaque et les mesures de sécurité prises, afin de maintenir la confiance du public.
+Collaboration avec les autorités : Fournir toutes les informations nécessaires à l’ANSSI, à la CNIL et à d’autres régulateurs ou autorités légales.
+
+8. Post-Incident et Amélioration Continue
+Analyse post-incident :
+Organiser des réunions de retour d'expérience (RETEX) avec toutes les parties prenantes pour analyser les points forts et les points faibles de la gestion de l'incident.
+Identifier les lacunes dans les processus, les outils de sécurité et la formation du personnel.
+Mise à jour du Plan de Réponse aux Incidents :
+En fonction des leçons apprises, réviser le PRI et améliorer les procédures pour mieux répondre à de futures cyberattaques.
+Tests réguliers du plan pour s’assurer de sa pertinence et de son efficacité.
+Renforcement de la cybersécurité :
+Renforcer les défenses : Mise à jour des outils de détection, renforcement des politiques de mot de passe, et déploiement de solutions de sécurité avancées comme le sandboxing ou la détection d'anomalies comportementales.
+Formation continue du personnel sur les bonnes pratiques de cybersécurité et les scénarios d'incidents.
