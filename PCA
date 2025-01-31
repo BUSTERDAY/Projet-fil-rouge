@@ -1,0 +1,78 @@
+Plan de Continuité d’Activité (PCA) en cas de cyberattaque pour un CHU
+
+1. Objectifs du PCA
+Assurer la sécurité des patients et des employés pendant une cyberattaque.
+Maintenir la disponibilité des services critiques (soins, accès aux dossiers patients, équipements médicaux).
+Protéger les données sensibles, notamment les dossiers médicaux, les informations financières et administratives.
+Minimiser l'impact sur les opérations hospitalières et reprendre les activités normales dans les plus brefs délais.
+
+2. Gouvernance du PCA
+Comité de gestion de crise : Composé de membres clés de la direction (DGA, responsables IT, responsables des soins, sécurité, RH, etc.).
+Responsables opérationnels : Désignation de responsables pour chaque domaine critique (soins médicaux, systèmes d'information, communications, logistique, etc.).
+Coordination avec les autorités externes : Prévoir des contacts avec les autorités sanitaires, la CNIL, les forces de l'ordre (selon la gravité de l'attaque).
+
+3. Préparation préalable
+Analyse des risques : Identifier les risques spécifiques liés aux cyberattaques (phishing, ransomware, compromission de données, attaque DDoS, etc.).
+Plan de sauvegarde des données : Assurer des sauvegardes régulières des systèmes critiques (DPI, systèmes de gestion hospitalière, bases de données médicales) sur des supports sécurisés et hors ligne.
+
+Tests de récupération : Tester régulièrement les procédures de récupération des données et la réactivité face aux attaques.
+**Mise en place d’un système de surveillance (SIEM) pour détecter les activités anormales en temps réel.
+Formation continue du personnel sur les bonnes pratiques de cybersécurité et les procédures à suivre en cas de cyberattaque.
+
+4. Déclenchement du PCA : Identification de la cyberattaque
+Identification de l'attaque : Les systèmes de sécurité (alertes SIEM, monitoring réseau) signalent l'incident.
+Évaluation préliminaire de l'impact : L’équipe de gestion de crise évalue si l’attaque a affecté des systèmes critiques comme les Dossiers Patient Informatisés (DPI), les équipements médicaux connectés, ou les infrastructures essentielles.
+Activation du PCA : Une fois l’attaque confirmée, le plan de continuité d'activité est activé par le comité de gestion de crise.
+
+5. Réponse immédiate à la cyberattaque
+Isolement des systèmes compromis :
+Déconnecter immédiatement les systèmes et serveurs suspects ou infectés pour éviter la propagation.
+Mise en quarantaine des équipements connectés au réseau (stations de travail, périphériques, appareils médicaux).
+Communication interne :
+Informer le personnel des mesures prises, de l'impact estimé et des actions à suivre (par exemple, ne pas utiliser certaines applications ou systèmes).
+Suspendre temporairement les accès aux systèmes sensibles (DPI, systèmes de gestion des patients, etc.) si nécessaire.
+Communication externe :
+Informer les autorités compétentes (CNIL, CERT, CNRS, etc.).
+Préparer une communication externe pour les médias (si l’attaque a un impact public), tout en protégeant la réputation de l’hôpital.
+Prise en charge des patients : Assurer la continuité des soins en cas d’indisponibilité de certains systèmes critiques (par exemple, accéder aux dossiers patients papier, utiliser des systèmes de secours).
+
+6. Gestion de la crise
+Évaluation de l'ampleur de l'attaque :
+Identifier les systèmes et services touchés (DPI, systèmes de gestion des patients, équipements médicaux).
+Evaluer la nature de l'attaque : ransomware, fuite de données, déni de service, etc.
+Mise en place d'un plan de confinement :
+Contenir l'attaque pour éviter toute propagation aux autres systèmes ou départements.
+Isolation physique de certaines infrastructures, si nécessaire (par exemple, déconnecter des serveurs du réseau).
+Recours aux experts externes :
+Engager une société spécialisée en cyberdéfense pour effectuer une analyse approfondie de l'attaque et une récupération des systèmes compromis (en cas de ransomware, par exemple).
+
+7. Récupération des systèmes critiques
+Priorisation des systèmes à récupérer :
+Récupérer en priorité les systèmes critiques pour les soins des patients (DPI, systèmes d’imagerie médicale, équipements médicaux).
+Revenir à un système de secours si l’infrastructure principale est compromise.
+Restauration des données :
+Récupérer les sauvegardes des systèmes affectés (bases de données, fichiers de configuration, etc.).
+Test des restaurations pour s'assurer de leur intégrité avant de les remettre en production.
+Mise en place d’une solution temporaire :
+Si les systèmes restent indisponibles, utiliser des solutions manuelles (papier) ou des systèmes de secours pour gérer les opérations hospitalières.
+
+8. Reprise des activités normales
+Vérification de l'intégrité des systèmes : Avant de remettre en ligne les services hospitaliers, tester les systèmes restaurés pour vérifier leur bon fonctionnement et la sécurité des données.
+Retour progressif à la normale : Réintégrer progressivement les systèmes en veillant à ce qu'aucune menace résiduelle ne subsiste.
+Débriefing et analyse post-incident :
+Analyser l’attaque et les actions menées pour identifier les leçons à tirer.
+Mettre à jour les procédures de sécurité et le PCA en fonction des failles découvertes.
+Former à nouveau le personnel en fonction des nouvelles menaces ou des failles identifiées.
+
+9. Communication post-crise
+Retour d'expérience interne : Organiser une réunion de débriefing avec l’ensemble des équipes pour analyser la gestion de la crise et recueillir des retours.
+Communication externe :
+Fournir un rapport détaillé aux autorités sanitaires et, si nécessaire, aux patients, expliquant les mesures prises pour sécuriser leurs données et protéger leur santé.
+Si nécessaire, répondre aux médias concernant l’incident, en veillant à ce que la communication soit précise et coordonnée.
+
+10. Amélioration continue
+Audit post-incident : Effectuer un audit complet de l’incident pour évaluer les points de vulnérabilité et renforcer la sécurité.
+Mise à jour des protocoles de sécurité :
+Renforcer les politiques de sécurisation des données et des systèmes critiques.
+Implémenter des solutions de détection et de prévention des intrusions plus avancées (SIEM, outils d'IA pour la détection des menaces).
+Réévaluation des sauvegardes : Vérifier la fréquence et la sécurité des sauvegardes et garantir qu'elles sont stockées dans des environnements isolés.
