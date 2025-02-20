@@ -1,256 +1,81 @@
+Analyse des risques : 
+
 Identifier les actifs critiques et les vulnérabilités potentielles
 
-1 - Inventaire des actifs critiques :
+1. Cadrage et Scoping
 
-Listez les équipements, systèmes et données les plus importants pour l’hôpital, comme les dossiers médicaux électroniques (DME), serveurs, dispositifs IoMT (Internet of Medical Things), et infrastructures réseau.
-Déterminez leur criticité en fonction de leur impact sur les opérations et la confidentialité des données en cas de compromission.
+Objectifs de l'analyse:
+- faire monté le CHU en matiruté sur les sujets de cybersécurité
+- faire adopter les bonnes pratiques d'utilisation des outils informatiques à tous les agents qui utilisent celui-ci
+- Avoir une meilleur confidencialité des données, afin de pouvoir mieux les protéges
+- L'intégrité des données
 
-1. Données et informations sensibles
-Dossiers médicaux électroniques (DME) :
+Identifier et analyser les risques cyber affectant le CHU Ynov pour 
 
-Contiennent l'historique médical, les diagnostics, les prescriptions, et les notes des professionnels de santé.
-Critiques pour la continuité des soins.
-Résultats d'examens médicaux :
+Prioriser les menaces critiques
 
-Imagerie (IRM, scanners), analyses de laboratoire, et rapports cliniques.
-Données personnelles des patients :
+Proposer des mesures de sécurité adaptées au milieu de la santé
 
-Noms, adresses, numéros de sécurité sociale, informations de contact.
-Soumises aux régulations comme le RGPD.
-Données de facturation et financières :
+Assurer la conformité aux réglementations en vigueur suivantes :
+- RGPD
+- HDS
+- NIS2
+- ISO 27001
 
-Informations relatives à la facturation des soins, aux assurances et aux paiements.
-Données de recherche médicale :
+Périmètre de l'étude: L'analyse de risque ce déroulera dans le périmètre du SI global du CHU, afin de pouvoir élever le niveau de sécurité de celui-ci
+car les hopitaux sont souvent la cible de cyberattaques.
 
-Protocoles, données d’essais cliniques, résultats de recherche.
-Données des employés :
+Systèmes d'information du CHU (Dossier Patient Informatisé, PACS, SI Administratif, SI Biomédical, etc.)
 
-Informations personnelles, dossiers RH, et fiches de paie.
-2. Systèmes informatiques
-Systèmes de gestion hospitalière (HIS - Hospital Information System) :
+Services critiques (urgence, réanimation, laboratoires, etc.)
 
-Logiciels utilisés pour gérer les admissions, les départs, la planification des soins, et les ressources.
-Systèmes de gestion des prescriptions électroniques (CPOE - Computerized Physician Order Entry) :
+Parties prenantes : Personnel médical, DSI, RSSI, prestataires, autorités de régulation
 
-Permettent aux médecins de prescrire médicaments et tests de manière sécurisée.
-Systèmes d'information radiologique (RIS) et d'archivage (PACS) :
-
-Gèrent et stockent les images médicales.
-Portails patients :
-
-Permettent aux patients de consulter leurs dossiers médicaux et de communiquer avec les soignants.
-Systèmes d'information de laboratoire (LIS) :
-
-Gèrent les analyses biologiques et leurs résultats.
-3. Infrastructures réseau et de communication
-Réseau informatique :
-
-L’infrastructure réseau connecte tous les systèmes, équipements médicaux, et utilisateurs.
-Serveurs et bases de données :
-
-Hébergent les données critiques et assurent le fonctionnement des applications.
-Systèmes de communication interne :
-
-Téléphones, messagerie sécurisée, et outils de coordination entre les équipes.
-VPN et accès distants :
-
-Permettent aux professionnels d’accéder aux systèmes à distance.
-4. Équipements médicaux connectés (IoMT - Internet of Medical Things)
-Appareils de diagnostic :
-
-IRM, scanners, électrocardiographes, et appareils d'analyse.
-Moniteurs de patients :
-
-Appareils de surveillance vitale (tension, fréquence cardiaque, etc.).
-Pompes à perfusion connectées :
-
-Régulent l'administration de médicaments.
-Systèmes de gestion des blocs opératoires :
-
-Gèrent les équipements et les patients pendant les interventions chirurgicales.
-Autres dispositifs médicaux connectés :
-
-Instruments de laboratoire, incubateurs, appareils de stérilisation.
-5. Installations physiques
-Systèmes de contrôle des bâtiments :
-
-Contrôle d'accès, vidéosurveillance, et systèmes de climatisation et chauffage (HVAC).
-Systèmes d’alimentation électrique :
-
-Groupes électrogènes, onduleurs, et alimentation de secours pour les équipements critiques.
-Systèmes de stockage de données physiques :
-
-Archives papier ou équipements de sauvegarde locaux.
-6. Services essentiels
-Portails tiers et services d'intégration :
-
-Services de laboratoires partenaires ou plateformes partagées pour l’analyse.
-Systèmes de téléconsultation :
-
-Utilisés pour fournir des soins à distance.
-Systèmes de gestion des urgences :
-
-Coordination des services d'urgence et gestion des flux de patients.
-7. Conformité réglementaire
-Rapports d'audits et conformité :
-
-Documents nécessaires pour respecter les normes locales et internationales (ex. RGPD, ISO 27001, HIPAA).
-Plans de continuité et de reprise d’activité (PCA/PRA) :
-
-Documents et infrastructures pour répondre à une crise ou un incident.
-Importance de la classification des actifs critiques
-Il est essentiel de prioriser ces actifs en fonction de leur impact :
-
-Hautement critique :
-Tout ce qui affecte directement la vie et les soins aux patients (DME, équipements médicaux connectés).
-Critique :
-Systèmes de gestion et données financières, car leur indisponibilité perturberait gravement les opérations.
-Support :
-Données administratives et systèmes d’infrastructure.
+Environnements externes impactant le CHU (fournisseurs, réseaux partenaires, cloud)
 
 
- 2- Analyse des vulnérabilités :
+2. Sources de risques et scénarios stratégiques
 
-Identifiez les failles potentielles, comme les logiciels obsolètes, configurations incorrectes ou absence de correctifs sur les dispositifs.
-Documentez les menaces, telles que les ransomwares, attaques de phishing, ou compromission des IoMT.
-Utiliser des outils de scan de vulnérabilités (ex : Nessus, OpenVAS)
+Menaces majeures identifiées
+Cyberattaques externes (ransomware, APT, phishing, attaques DDoS)
+Compromission interne (erreur humaine, malveillance interne, manque de sensibilisation)
+Vulnérabilités techniques (obsolescence matérielle et logicielle, failles de sécurité, configuration défaillante)
+Fournisseurs et prestataires tiers (risque de chaîne d'approvisionnement, accès non sécurisés)
+Catastrophes naturelles et incidents physiques (incendie,tranblement de terre, panne électrique, inondation, vol)
+Non-conformités réglementaires (sanctions, perte de confiance des patients, responsabilité légale)
+Scénarios stratégiques
 
+Scénario 1 : Ransomware paralysant le SI du CHU
 
-1. Vulnérabilités techniques
-1.1. Logiciels et systèmes obsolètes
-Description :
-Utilisation de systèmes d’exploitation ou d’applications non maintenus (ex : Windows XP encore utilisé sur des appareils IoMT).
-Impact :
-Susceptibilité accrue aux attaques (exploits connus non corrigés).
-Exemple d’attaque :
-Les ransomwares comme WannaCry ciblant les systèmes non patchés.
-1.2. Équipements médicaux connectés (IoMT)
-Description :
-Appareils souvent non conçus avec une cybersécurité robuste (manque de chiffrement, ports ouverts, défauts par défaut).
-Impact :
-Compromission des dispositifs critiques, mettant en danger les patients.
-Exemple d’attaque :
-Prise de contrôle d’une pompe à perfusion connectée pour modifier ses réglages.
-1.3. Mauvaise configuration des infrastructures
-Description :
-Absence de segmentation réseau, pare-feu mal configurés, ou ports inutilisés laissés ouverts.
-Impact :
-Accès facilité aux systèmes internes par un attaquant.
-Exemple d’attaque :
-Mouvement latéral à travers le réseau pour atteindre des données sensibles.
-1.4. Faiblesse dans la gestion des accès
-Description :
-Utilisation d’authentification simple (sans MFA), partage de comptes, ou droits excessifs.
-Impact :
-Compromission facilitée des comptes critiques.
-Exemple d’attaque :
-Utilisation d’identifiants volés pour accéder aux dossiers médicaux électroniques (DME).
-1.5. Sauvegardes mal sécurisées
-Description :
-Sauvegardes non chiffrées ou stockées sur des systèmes accessibles depuis le réseau principal.
-Impact :
-Ransomware chiffrant à la fois les données de production et les sauvegardes.
-Exemple d’attaque :
-Inaccessibilité des données critiques même après restauration.
-2. Vulnérabilités organisationnelles
-2.1. Absence de politique de sécurité formelle
-Description :
-Manque de politiques claires sur l’utilisation des systèmes, la gestion des incidents ou les droits d’accès.
-Impact :
-Actions non conformes ou imprudentes de la part du personnel.
-Exemple d’attaque :
-Ouverture de pièces jointes malveillantes sans vérification préalable.
-2.2. Manque de gestion des risques
-Description :
-Absence d’identification et de priorisation des actifs critiques ou des menaces spécifiques.
-Impact :
-Faible résilience face à des incidents comme une cyberattaque ciblée.
-Exemple :
-Mauvaise préparation à une attaque de type DDoS.
-2.3. Problèmes de gestion des fournisseurs tiers
-Description :
-Dépendance à des prestataires externes qui ne respectent pas les normes de sécurité.
-Impact :
-Risque accru d’accès non autorisé via les fournisseurs.
-Exemple :
-Compromission d’un système hospitalier via un fournisseur de maintenance IoMT.
-3. Vulnérabilités humaines
-3.1. Manque de sensibilisation du personnel
-Description :
-Le personnel n’est pas formé pour reconnaître les attaques comme le phishing ou les tentatives d’ingénierie sociale.
-Impact :
-Compromission par négligence ou erreurs humaines.
-Exemple d’attaque :
-Clic sur un lien de phishing donnant accès au réseau interne.
-3.2. Mauvaise gestion des mots de passe
-Description :
-Réutilisation ou faiblesse des mots de passe.
-Impact :
-Vulnérabilité accrue face aux attaques par force brute ou par hameçonnage.
-Exemple d’attaque :
-Utilisation de mots de passe récupérés lors d’une violation d’un autre service.
-3.3. Absence de procédure claire en cas d’incident
-Description :
-Le personnel ne sait pas comment réagir face à un incident (ex : attaque de ransomware).
-Impact :
-Temps de réponse prolongé, aggravant les dommages.
-Exemple :
-Connexion prolongée d’appareils infectés à un réseau.
-4. Vulnérabilités physiques
-4.1. Accès physique non sécurisé
-Description :
-Absence de contrôle d’accès aux salles de serveurs ou aux postes de travail.
-Impact :
-Vol d’équipements ou de données sensibles.
-Exemple d’attaque :
-Extraction de données via un périphérique USB connecté à une station de travail.
-4.2. Systèmes non protégés contre les catastrophes
-Description :
-Défaillances dans les protections contre les incendies, inondations ou coupures électriques.
-Impact :
-Perte de données et interruption des opérations.
-Exemple :
-Dommages aux serveurs suite à une inondation non anticipée.
-5. Vulnérabilités dans les processus de sauvegarde et récupération
-5.1. Plans de reprise d’activité insuffisants
-Description :
-Absence de plan détaillé ou tests insuffisants des procédures de restauration.
-Impact :
-Temps de récupération prolongé après un incident.
-Exemple :
-Incapacité à restaurer les dossiers des patients après une attaque.
-5.2. Absence de sauvegardes hors ligne
-Description :
-Toutes les sauvegardes sont connectées au réseau principal.
-Impact :
-Sauvegardes compromises lors d’une attaque.
-Exemple :
-Ransomware chiffrant les sauvegardes accessibles via le réseau.
-Résumé des actions à entreprendre
-Pour répondre à ces vulnérabilités, le CHU doit :
+Acteurs menaçants : Cybercriminels (ransomware-as-a-service, groupes APT)
+Impacts : Indisponibilité des systèmes critiques, blocage des soins, atteinte à l'image
+Objectifs de sécurité associés : Réduction de la surface d'attaque, sauvegardes résilientes, sensibilisation des utilisateurs, mise en place d'une solution EDR (Endpoint Detection and Response)
 
-Mettre à jour et segmenter les systèmes :
-Appliquer des correctifs, isoler les IoMT, et configurer des pare-feu stricts.
-Renforcer la gestion des accès :
-Introduire une authentification multifactorielle (MFA) et limiter les privilèges.
-Sensibiliser le personnel :
-Former à la reconnaissance des menaces comme le phishing.
-Sécuriser les sauvegardes :
-Mettre en place des sauvegardes chiffrées et hors ligne.
-Simuler des incidents :
-Tester le plan de reprise d’activité et effectuer des tests d’intrusion.
-Renforcer la sécurité physique :
-Contrôler l’accès aux zones sensibles et protéger les équipements.
+Scénario 2 : Compromission d'un compte administrateur
 
+Acteurs menaçants : Employé malveillant, attaquant externe exploitant une faille
+Impacts : Vol de données sensibles, perturbation des services, détournement des accès
+Objectifs de sécurité associés : Gestion des accès à privilèges, surveillance des logs, MFA, mise en place d'un bastion pour les accès sensibles
 
+Scénario 3 : Intrusion via un prestataire non sécurisé
+Acteurs menaçants : Hacker exploitant un prestataire vulnérable
+Impacts : Accès non autorisé à des systèmes internes, propagation d'un malware
+Objectifs de sécurité associés : Contrôle des tiers, segmentation réseau, SOC et surveillance, audit de conformité des prestataires
 
-Configuration des outils :
+3. Mesures de sécurité et plan d'action
+Mesures prioritaires
+Renforcement de la sensibilisation et formation des utilisateurs (phishing tests, campagnes de sensibilisation, formation des administrateurs)
+Mise en place de sauvegardes segmentées et testées régulièrement (air-gapped backups, PRA testé)
+Gestion stricte des accès (élévation des privilèges, MFA, segmentation réseau, politique de zéro trust)
+Supervision et détection des menaces via un SOC (Security Operations Center, détection d’intrusions, threat intelligence)
+Plan de continuité et de reprise d'activité (PCA/PRA, scénarios de crise testés, redondance des infrastructures)
+Audit régulier des systèmes et tests d'intrusion (pentests, révisions de configuration, audits de conformité RGPD et HDS)
+Amélioration de la résilience face aux attaques DDoS (firewalls avancés, scrubbing centers, CDN de protection)
+Mise en place d'une stratégie de zero-trust (accès conditionnels, modèle de moindre privilège)
 
-Installez et configurez des outils comme Nessus ou OpenVAS pour analyser le réseau et les systèmes de l’hôpital.
+Suivi et gouvernance
+Pilotage par le RSSI en collaboration avec la DSI
+Tableaux de bord de suivi des risques
+Revue périodique des scénarios et mesures
 
-Définissez la portée du scan : incluez les serveurs, applications, et dispositifs critiques.
-
-Interprétation des résultats :
-
-Identifiez les failles détectées, classez-les par gravité, et associez-les à des correctifs ou actions de mitigation.
-Priorisez les vulnérabilités critiques affectant les systèmes critiques et sensibles.
+Coordination avec les autorités sanitaires et l'ANSSI
