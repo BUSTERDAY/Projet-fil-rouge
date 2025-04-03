@@ -1,81 +1,157 @@
 Analyse des risques : 
+1. Cadrage et contexte
 
-Identifier les actifs critiques et les vulnérabilités potentielles
+Objectif : Sécuriser l'infrastructure du CHU de Ynov contre les cybermenaces. Périmètre : Inclut les serveurs, les applications critiques, les données sensibles et les réseaux de l'hôpital. Acteurs : Équipe de sécurité informatique, personnel médical, administrateurs système.
+Description de l'environnement
+Le CHU de Ynov est un établissement de santé, donc un acteur avec des données sensibles, incluant des informations personnelles de santé des patients (dossier médical, historique des traitements, résultats de tests, etc.).
+Ces données sont soumises à une réglementation stricte (par exemple, le RGPD).
+L'infrastructure informatique de l'hôpital est composée de réseaux internes, de serveurs, de bases de données, d'applications métiers spécifiques, d'un système de gestion de patients, etc.
 
-1. Cadrage et Scoping
+Besoins de sécurité
+2.1. Identification des actifs sensibles
+Données sensibles : Dossiers médicaux des patients, informations personnelles de santé, résultats d'examens médicaux.
 
-Objectifs de l'analyse:
-- faire monté le CHU en matiruté sur les sujets de cybersécurité
-- faire adopter les bonnes pratiques d'utilisation des outils informatiques à tous les agents qui utilisent celui-ci
-- Avoir une meilleur confidencialité des données, afin de pouvoir mieux les protéges
-- L'intégrité des données
+Infrastructure IT : Serveurs de bases de données, systèmes de gestion des patients, réseaux internes.
 
-Identifier et analyser les risques cyber affectant le CHU Ynov pour 
+Systèmes critiques : Applications et logiciels utilisés pour gérer les soins des patients et les opérations hospitalières.
 
-Prioriser les menaces critiques
+Accès aux données : Médecins, infirmiers, personnel administratif, etc.
 
-Proposer des mesures de sécurité adaptées au milieu de la santé
+2.2. Besoins de sécurité
+Confidentialité : Assurer que seules les personnes autorisées accèdent aux informations sensibles.
 
-Assurer la conformité aux réglementations en vigueur suivantes :
-- RGPD
-- HDS
-- NIS2
-- ISO 27001
+Intégrité : Garantir que les données médicales sont exactes et n'ont pas été modifiées ou corrompues.
 
-Périmètre de l'étude: L'analyse de risque ce déroulera dans le périmètre du SI global du CHU, afin de pouvoir élever le niveau de sécurité de celui-ci
-car les hopitaux sont souvent la cible de cyberattaques.
+Disponibilité : Garantir que les systèmes et les données sont accessibles en tout temps, même en cas d'attaque.
 
-Systèmes d'information du CHU (Dossier Patient Informatisé, PACS, SI Administratif, SI Biomédical, etc.)
+Traçabilité : Permettre de retracer les accès et les modifications des systèmes d'information.
 
-Services critiques (urgence, réanimation, laboratoires, etc.)
+Réversibilité : Assurer la capacité de restaurer les données à partir de sauvegardes en cas d'incident.
 
-Parties prenantes : Personnel médical, DSI, RSSI, prestataires, autorités de régulation
+Analyse des événements redoutés
+3.1. Identification des menaces
+Cyberattaques : Phishing, malware, ransomware, attaques par déni de service (DDoS).
 
-Environnements externes impactant le CHU (fournisseurs, réseaux partenaires, cloud)
+Intrusion dans le réseau : Accès non autorisé aux systèmes internes via des vulnérabilités.
 
+Fuites de données : Exfiltration des données sensibles, notamment les informations de santé.
 
-2. Sources de risques et scénarios stratégiques
+Perturbation des services : Interruption des services critiques tels que la gestion des patients et les systèmes de surveillance.
 
-Menaces majeures identifiées
-Cyberattaques externes (ransomware, APT, phishing, attaques DDoS)
-Compromission interne (erreur humaine, malveillance interne, manque de sensibilisation)
-Vulnérabilités techniques (obsolescence matérielle et logicielle, failles de sécurité, configuration défaillante)
-Fournisseurs et prestataires tiers (risque de chaîne d'approvisionnement, accès non sécurisés)
-Catastrophes naturelles et incidents physiques (incendie,tranblement de terre, panne électrique, inondation, vol)
-Non-conformités réglementaires (sanctions, perte de confiance des patients, responsabilité légale)
-Scénarios stratégiques
+3.2. Identification des vulnérabilités
+Vulnérabilités techniques :
 
-Scénario 1 : Ransomware paralysant le SI du CHU
+Failles dans les systèmes d'exploitation des serveurs.
 
-Acteurs menaçants : Cybercriminels (ransomware-as-a-service, groupes APT)
-Impacts : Indisponibilité des systèmes critiques, blocage des soins, atteinte à l'image
-Objectifs de sécurité associés : Réduction de la surface d'attaque, sauvegardes résilientes, sensibilisation des utilisateurs, mise en place d'une solution EDR (Endpoint Detection and Response)
+Services non patchés ou non mis à jour (ex : versions obsolètes de logiciels).
 
-Scénario 2 : Compromission d'un compte administrateur
+Manque de segmentation du réseau interne.
 
-Acteurs menaçants : Employé malveillant, attaquant externe exploitant une faille
-Impacts : Vol de données sensibles, perturbation des services, détournement des accès
-Objectifs de sécurité associés : Gestion des accès à privilèges, surveillance des logs, MFA, mise en place d'un bastion pour les accès sensibles
+Authentification faible ou mal configurée (mots de passe simples, absence d’authentification multi-facteurs).
 
-Scénario 3 : Intrusion via un prestataire non sécurisé
-Acteurs menaçants : Hacker exploitant un prestataire vulnérable
-Impacts : Accès non autorisé à des systèmes internes, propagation d'un malware
-Objectifs de sécurité associés : Contrôle des tiers, segmentation réseau, SOC et surveillance, audit de conformité des prestataires
+Absence de chiffrement des données sensibles en transit et au repos.
 
-3. Mesures de sécurité et plan d'action
-Mesures prioritaires
-Renforcement de la sensibilisation et formation des utilisateurs (phishing tests, campagnes de sensibilisation, formation des administrateurs)
-Mise en place de sauvegardes segmentées et testées régulièrement (air-gapped backups, PRA testé)
-Gestion stricte des accès (élévation des privilèges, MFA, segmentation réseau, politique de zéro trust)
-Supervision et détection des menaces via un SOC (Security Operations Center, détection d’intrusions, threat intelligence)
-Plan de continuité et de reprise d'activité (PCA/PRA, scénarios de crise testés, redondance des infrastructures)
-Audit régulier des systèmes et tests d'intrusion (pentests, révisions de configuration, audits de conformité RGPD et HDS)
-Amélioration de la résilience face aux attaques DDoS (firewalls avancés, scrubbing centers, CDN de protection)
-Mise en place d'une stratégie de zero-trust (accès conditionnels, modèle de moindre privilège)
+Absence de mécanismes de sauvegarde et de restauration adaptés.
 
-Suivi et gouvernance
-Pilotage par le RSSI en collaboration avec la DSI
-Tableaux de bord de suivi des risques
-Revue périodique des scénarios et mesures
+Vulnérabilités humaines :
 
-Coordination avec les autorités sanitaires et l'ANSSI
+Manque de formation des utilisateurs sur les bonnes pratiques de cybersécurité.
+
+Insuffisance de contrôles d'accès et de gestion des privilèges.
+
+2. Étude des scénarios de risque
+Scénario 1 : Compromission des serveurs
+
+Source de la menace : Attaquant externe (cybercriminel)
+Événement redouté : Compromission des serveurs de base de données des patients
+
+Impacts : 
+- Fuite de données sensibles
+- interruption des services médicaux
+- atteinte à la réputation de l'hôpital
+
+Probabilité : Élevée (les serveurs sont souvent ciblés)
+Mesures de sécurité :
+- Mise à jour régulière des systèmes d'exploitation et des logiciels
+- Configuration correcte des pare-feu et des IDS/IPS
+- Utilisation d'outils de scan de vulnérabilités (Nessus, OpenVAS)
+
+Scénario 2 : Exploitation des failles applicatives
+Source de la menace : Attaquant interne (employé malveillant)
+Événement redouté : Exploitation des failles dans les applications médicales
+Impacts : Modification non autorisée des dossiers médicaux, accès non autorisé aux informations sensibles
+Probabilité : Moyenne (dépend de la qualité du code et des pratiques de développement)
+
+Mesures de sécurité :
+- Revues de code régulières
+- Tests de sécurité automatisés (SAST, DAST)
+- Utilisation de bibliothèques sécurisées et à jour
+
+Scénario 3 : Compromission des données
+
+Source de la menace : Attaquant externe (cybercriminel)
+Événement redouté : Vol de données sensibles en transit ou au repos
+Impacts : Violation de la confidentialité des patients, sanctions réglementaires
+Probabilité : Élevée (les données sensibles sont une cible de choix)
+
+Mesures de sécurité :
+Chiffrement des données sensibles (AES pour les données au repos, TLS pour les données en transit)
+Sauvegardes régulières et sécurisées
+Politiques d'accès strictes et authentification à deux facteurs (2FA)
+
+3. Évaluation des risques
+
+Critères d'évaluation :
+Gravité : Impact potentiel sur les opérations de l'hôpital, la confidentialité des données, et la réputation
+Probabilité : Fréquence et facilité avec laquelle les menaces peuvent se matérialiser
+
+Tableau d'évaluation :
+Scénario	                            Gravité	       Probabilité	    Niveau de risque
+Compromission des serveurs	           Élevée	         Élevée	         Critique
+Exploitation des failles applicatives	 Moyenne	      Moyenne	          Modéré
+Compromission des données	            Très élevée	     Élevée	         Critique
+Ransomware                             Moyenne         Moyenne         élevée
+DDOS                                   Moyenne          Moyenne        Modéré
+
+4. Traitement des risques
+Plan de traitement :
+
+Compromission des serveurs :
+- Mise à jour et patching réguliers
+- Configuration de pare-feu et IDS/IPS
+- Scans de vulnérabilités réguliers
+- Renforcer la gestion des accès
+
+Exploitation des failles applicatives :
+- Revues de code et tests de sécurité
+- Utilisation de bibliothèques sécurisées
+
+Compromission des données :
+- Chiffrement des données
+- Sauvegardes sécurisées
+- Politiques d'accès strictes et 2FA
+
+Actions à court terme
+Réaliser un scan de vulnérabilités avec des outils comme Nessus ou OpenVAS pour identifier les failles existantes.
+
+Effectuer des tests d'intrusion pour valider l'efficacité des mesures de sécurité en place.
+
+Documentation des configurations de sécurité et des politiques de gestion des accès.
+
+Actions à long terme
+Audit régulier des systèmes de sécurité.
+
+Mise en place d'une veille active pour détecter de nouvelles menaces et vulnérabilités.
+
+5. Validation et communication
+
+Validation :
+
+Vérification de l'efficacité des mesures de sécurité mises en place
+Tests d'intrusion pour évaluer la résistance des systèmes
+Communication :
+
+Présentation des résultats de l'analyse de risque aux parties prenantes
+Sensibilisation du personnel aux bonnes pratiques de cybersécurité
+Conclusion
+Cette analyse de risque basée sur la méthode EBIOS Risk Manager permet d'identifier les scénarios de risque, d'évaluer leur impact et leur probabilité, et de définir des mesures de sécurité adaptées pour protéger l'infrastructure du CHU de Ynov.
