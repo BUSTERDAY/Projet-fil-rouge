@@ -1,0 +1,11 @@
+Documentation des processus et des configurations
+
+La documentation couvre l’ensemble des procédures opérationnelles et configurations système/réseau du CHU Ynov. Elle comprend notamment :
+	•	Processus ITSM : cartes des flux métier, procédure de gestion des changements (changement planifié, test, déploiement, retour en arrière), gestion des accès et incidents (voir plan PRI), routine de mise à jour logicielle.
+	•	Paramétrage technique : schémas réseau détaillés, plans d’adressage IP, règles de pare-feu et de VLAN (ex. règles de filtrage validées), configurations des serveurs critiques (ex. Active Directory, bases de données, interfaces SSO).
+	•	Procédures de sécurité : mode opératoire de sauvegarde/restauration, checklist de reprise (PRA) et de continuité (PCA), procédures d’authentification (mots de passe, MFA, cartes à puce), plan de permissions par profil d’utilisateur.
+	•	Registre des risques et conformité : rapport EBIOS final, plan d’action associé, attestations de conformité ISO 27001/HDS, registre CNIL des traitements et incidents.
+
+Cette documentation est mise à jour régulièrement (au moins annuellement ou après chaque modification majeure) et versionnée. Elle sert de preuve de conformité : la CNIL recommande en effet de formaliser les procédures afin de démontrer le respect du RGPD . De même, ISO 27001 impose une politique de configuration documentée (Annexe A.8.9) et des enregistrements pour valider que les mesures sont appliquées. Un manuel d’exploitation spécifique aux opérateurs DSI détaille les routines quotidiennes (journaux à vérifier, processus de remontée d’alerte). Enfin, un glossaire technique et un annuaire des acronymes facilitent la compréhension de tous ces documents par les équipes.
+
+Sources principales : réglementations et recommandations ANSSI (méthode EBIOS RM , guides de sécurité, retours d’expérience hôpitaux), normes ISO 27001/27005, RGPD, référentiel HDS, et cas concrets d’attaques (LockBit, CHSF, Cannes, Armentières, etc.) cités ci-dessus. Ces références assurent la cohérence de la stratégie sécurité avec l’état de l’art et les obligations légales.
