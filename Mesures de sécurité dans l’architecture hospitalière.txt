@@ -1,0 +1,17 @@
+Mesures de sécurité dans l’architecture hospitalière
+
+L’architecture réseau et système du CHU Ynov est sécurisée en couches, suivant les recommandations de l’ANSSI.
+Les réseaux sont segmentés selon les fonctions (administratif, bureautique, biomédical, urgences, GTB/énergie, visiteurs)  pour limiter la propagation d’une attaque.
+Chaque segment est protégé par pare-feux dédiés et des VLANs isolés par filtrage stricte. Les points d’entrée (Internet, Wi-Fi patient, cloud) passent par une DMZ ou un proxy renforcé.
+Un annuaire central (Active Directory) gère tous les accès, avec authentification unique et journaux centralisés .
+Les comptes administrateurs et l’accès aux systèmes critiques (DPI, SIH, serveurs) exigent une double authentification.
+Le principe de moindre privilège est appliqué systématiquement : aucun utilisateur n’a plus de droits que nécessaire , et les comptes à haut privilège sont isolés physiquement (bureaux dédiés) et surveillés (touche-mistral, UBA).
+
+Les données transitant hors du CHU (télétravail, prestataires, cloud) sont chiffrées de bout en bout (VPN IPSec, TLS 1.3) selon l’état de l’art .
+Les données sensibles stockées sur des serveurs ou supports externes (cloud HDS, backup hors site) le sont également par chiffrement fort .
+Des systèmes de détection d’intrusion (IDS/IPS) et de prévention antivirale (EDR) surveillent en continu le trafic et l’intégrité des hôtes.
+L’Active Directory fait l’objet d’audits réguliers (plans de comptes, listes d’accès) pour éviter les dérives.
+Au niveau physique, l’accès aux salles serveurs et au NAC (armoires réseau) est soumis à contrôle biométrique et vidéo-surveillance.
+
+En résumé, la défense repose sur plusieurs piliers combinés : cloisonnement des systèmes (ANSSI R6) , authentification et journalisation (R8) , chiffrement des données critiques (R7) , et moindre privilège (R10) .
+Des tests de vulnérabilité et des audits de configuration sont réalisés régulièrement pour vérifier la robustesse de l’ensemble (notamment les serveurs cœur de métier et biomédicaux), avec correction des écarts dès leur détection.
