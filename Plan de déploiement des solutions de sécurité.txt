@@ -1,0 +1,11 @@
+Plan de déploiement des solutions de sécurité
+
+Le plan de déploiement détaille la mise en place progressive des outils et contrôles de sécurité validés par l’analyse de risques. Il comporte plusieurs phases :
+	1.	État des lieux et préparation : recensement des équipements et logiciels existants, définition des responsabilités et planning général.
+	2.	Test et pré-production : installation pilote dans un environnement de test (laboratoire ou réseau isolé) pour chaque solution (pare-feu de nouvelle génération, EDR, SIEM, MFA, etc.), avec validation des fonctionnalités et de la compatibilité.
+	3.	Déploiement progressif : mise en œuvre par étapes (e.g. d’abord sur le réseau administratif, puis bureaux, puis segments médicaux) pour maîtriser l’impact. Les règles de pare-feu et les stratégies AD sont appliquées progressivement, avec backups des configurations initiales.
+	4.	Validation opérationnelle : chaque déploiement fait l’objet d’un contrôle de conformité (tests de fonction, simulations d’attaque interne) pour s’assurer qu’il répond aux exigences (ex. filtrage conforme aux recommandations ANSSI ). Les plans d’adressage réseau et diagrammes sont mis à jour en conséquence.
+	5.	Formation et communication : en parallèle, le DSI informe le personnel des changements (nouveaux outils, procédures modifiées). Par exemple, la mise en place du MFA fait l’objet d’une séance de formation et d’un guide utilisateur.
+	6.	Maintenance et supervision : le plan décrit la procédure de surveillance post-déploiement (suivi de journaux dans le SIEM, ajustement des alertes, gestion des incidents liés à la configuration).
+
+Ce plan fait référence aux bonnes pratiques de l’ANSSI : segmentation stricte (R6 ) avant la bascule finale, chiffrement des communications critiques (R7 ) et authentification renforcée (R8, R10  ). Les étapes de déploiement se concluent par un audit de sécurité et une mise à jour de la documentation technique pour capitaliser l’installation.
