@@ -1,0 +1,12 @@
+Politique de Sécurité des Systèmes d’Information (PSSI)
+
+La PSSI définit la gouvernance et les principes généraux de sécurité pour le CHU Ynov, en alignement avec la norme ISO 27001, le référentiel HDS et le RGPD.
+Elle fixe les objectifs de confidentialité, d’intégrité et de disponibilité des données de santé, les responsabilités (direction, RSSI, DPO, utilisateurs), le périmètre (tous les SI, applications et personnels) et les engagements de la direction.
+Les règles de base incluent la classification des données (publique, interne, sensible, secret médical), la gestion des accès (authentification forte, MFA pour les comptes sensibles), et les procédures de contrôle.
+L’article 32 du RGPD impose la mise en œuvre de mesures techniques et organisationnelles proportionnées aux risques (chiffrement, disponibilité, plans de restauration) .
+De même, la certification HDS exige le respect des normes ISO (notamment ISO 27001) et un plan de sauvegarde/restauration détaillé  .
+
+La PSSI précise les contrôles indispensables :
+gestion des mots de passe et des comptes à privilège (principe du moindre privilège ), cloisonnement réseau (VLAN pour séparer réseaux hospitalier, administratifs, médicaux) , chiffrement des données critiques en transit et au repos , détection d’intrusion (IDS/EDR/SIEM), audits réguliers des journaux.
+Elle couvre aussi les aspects humains : politique de sensibilisation (section 6 ci‑après), formations obligatoires, et sanctions en cas de manquement.
+La PSSI rappelle enfin les exigences légales (RGPD, HDS, décret ERP) et le rôle du RSSI. Un glossaire et des annexes (références normatives, organigramme, matrice des rôles) complètent le document.
